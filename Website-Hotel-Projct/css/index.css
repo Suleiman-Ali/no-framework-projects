@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7em;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+.navbar {
+  background-color: #333;
+  overflow: auto;
+}
+.navbar a {
+  color: white;
+}
+.logo {
+  float: left;
+  padding: 10px;
+  text-align: center;
+}
+.li-non-block,
+.li-non-block a,
+.current {
+  float: left;
+  float: right;
+  font-size: 20px;
+  padding: 10px;
+  display: block;
+  text-align: center;
+}
+.li-non-block:hover,
+.li-non-block a:hover,
+#current,
+#current a {
+  background-color: #444;
+  color: #f7c08a;
+}
+
+.showcase {
+  background: url("../Images/showcase.jpg") no-repeat center center/cover;
+  height: 300px;
+  color: white;
+  text-align: center;
+  padding-top: 200px;
+}
+.enjoy {
+  margin-bottom: 30px;
+  font-size: 60px;
+}
+#enjoy {
+  color: #f7c08a;
+}
+#text-head {
+  margin-top: 40px;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+#text-Lrow {
+  padding-left: 13px;
+}
+.btn {
+  font-size: 20px;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.btn:hover {
+  color: #333;
+  background-color: #f7c08a;
+  cursor: pointer;
+}
+#btn-light {
+  background-color: #fff;
+  color: #333;
+}
+#btn-light:hover {
+  background-color: #f7c08a;
+}
+.text-light {
+  color: #f7c08a;
+}
+#home-info {
+  height: 600px;
+}
+.info-content h2 {
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+.info-content p {
+  padding: 0 10px 25px 10px;
+  font-size: 20px;
+}
+#info-img {
+  float: left;
+  width: 50%;
+  background: url("../Images/photo-1.jpg") no-repeat center/cover;
+  min-height: 100%;
+}
+.info-content {
+  float: right;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+#edit {
+  padding: 80px;
+}
+
+.bg-dark {
+  background-color: #333;
+  color: #fff;
+}
+.box {
+  width: 500px;
+  height: 250px;
+  text-align: center;
+  padding-top: 100px;
+}
+.box i {
+  margin-bottom: 20px;
+}
+.box1 {
+  background-color: #fff;
+  color: #333;
+  float: left;
+}
+.box2 {
+  color: #333;
+  background-color: #f7c08a;
+  float: left;
+}
+.box3 {
+  background-color: #fff;
+  color: #333;
+  float: left;
+}
+
+.clr {
+  clear: both;
+}
+#fotter {
+  text-align: center;
+  background-color: #444;
+  color: #fff;
+  padding: 20px;
+}
+#lighten {
+  color: #f7c08a;
+}
+#section1 div p {
+  width: 400px;
+}
+#section1 div h1 {
+  padding-bottom: 20px;
+}
+#text {
+  float: left;
+  padding: 20px;
+  font-size: 25px;
+  padding-left: 50px;
+}
+#about-img {
+  float: left;
+  width: 800px;
+  height: 373px;
+  margin-top: 30px;
+  margin-left: 150px;
+  border-radius: 25px;
+  object-fit: cover;
+}
+#about-image {
+  background-color: #333;
+}
+body {
+  background-color: #fff;
+}
+.testmons {
+  height: 500px;
+  background: url("../Images/test-bg.jpg") no-repeat center center/cover;
+  padding: 110px 40px 40px 40px;
+}
+.testmo {
+  background-color: #f7c08a;
+  height: 101px;
+  margin: 80px;
+  opacity: 0.8;
+}
+.testmo img {
+  width: 100px;
+  border-radius: 50%;
+  float: left;
+  padding-right: 20px;
+}
+.testmo p {
+  padding: 25px 25px;
+}
+.testmons h2 {
+  color: #fff;
+  font-size: 40px;
+  text-align: center;
+}
+#lighten-text {
+  color: #f7c08a;
+}
+#header {
+  padding: 50px;
+  padding-bottom: 10px;
+  font-size: 25px;
+}
+#header h1 {
+  margin-bottom: 20px;
+}
+.name {
+  padding-left: 50px;
+}
+.name input {
+  width: 802px;
+  height: 40px;
+}
+.body {
+  background-color: #333;
+}
+form {
+  background-color: #fff;
+}
+#btn-1 {
+  margin-left: 50px;
+  width: 100px;
+  height: 50px;
+  margin-top: 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.b-fotter {
+  background-color: #333;
+  height: 30px;
+}
+.loc {
+  color: #fff;
+  float: left;
+  height: 200px;
+  text-align: center;
+  padding-left: 300px;
+  padding-top: 100px;
+}

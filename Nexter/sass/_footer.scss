@@ -1,0 +1,71 @@
+.footer {
+  background-color: $color-secondary;
+  padding: 8rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: max-content max-content;
+  justify-items: center;
+
+  @media only screen and (max-width: $smallest) {
+    justify-content: center;
+  }
+}
+
+.nav {
+  list-style: none;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+
+  @media only screen and (max-width: $mid) {
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+  }
+
+  @media only screen and (max-width: $small) {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  &__item {
+    border: 4px dotted $color-primary-dark;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    transition: all 0.25s;
+    border-radius: 3px;
+    color: $color-grey-light-2;
+    white-space: nowrap;
+    text-align: center;
+
+    &:hover {
+      transform: scale(1.05) translateY(-3px);
+      color: $color-grey-light-1;
+      letter-spacing: 2px;
+      border: 4px dotted $color-primary;
+    }
+
+    &:active {
+      transform: translateY(-1.5px);
+    }
+  }
+
+  &__link {
+    font-size: 1.4rem;
+    color: inherit;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: $font-display;
+    text-align: center;
+    outline: none;
+  }
+}
+
+.copy {
+  font-size: 2rem;
+  color: $color-primary;
+  font-family: $font-display;
+  margin-top: 4rem;
+  white-space: nowrap;
+}

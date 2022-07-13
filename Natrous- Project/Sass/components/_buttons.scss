@@ -1,0 +1,103 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 2.5rem;
+    transition: all 0.2s;
+    position: relative;
+    font-size: $deafult-font-size;
+    white-space: nowrap;
+    border: none;
+    cursor: pointer;
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border-radius: 2.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.5s;
+  }
+
+  &--white {
+    background-color: $color-white;
+    color: $color-grey-dark;
+
+    &::after {
+      background-color: $color-white;
+    }
+  }
+  &--grenn {
+    background: linear-gradient(
+      to right,
+      rgba($light-green, 1),
+      rgba($Dark-green, 1)
+    );
+    color: $color-white;
+    z-index: 1;
+    &::after {
+      background: linear-gradient(
+        to right,
+        rgba($light-green, 1),
+        rgba($Dark-green, 1)
+      );
+    }
+  }
+
+  &:hover {
+    transform: translateY(-0.2rem);
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+
+    &::after {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+  }
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(2px);
+    box-shadow: 0 0.5rem 2rem rgba($color-black, 0.2);
+  }
+
+  &--bottom-animation {
+    animation-name: move-in-bottom;
+    animation-duration: 1.3s;
+    animation-delay: 0.3s;
+    animation-fill-mode: backwards;
+  }
+}
+.btn-text {
+  &:link,
+  &:visited {
+    color: $Dark-green;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid $Dark-green;
+    padding: 3px;
+    font-size: $deafult-font-size;
+    transition: all 0.3s;
+  }
+
+  &:hover {
+    background-color: $Dark-green;
+    color: $color-white;
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
+    transform: translateY(-3px);
+    border-radius: 0.3rem;
+  }
+  &:active {
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.15);
+    transform: translateY(2px);
+  }
+}

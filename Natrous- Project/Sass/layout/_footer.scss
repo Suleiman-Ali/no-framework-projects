@@ -1,0 +1,81 @@
+.footer {
+  background-color: $color-grey-dark-3;
+  padding: 5rem;
+  font-size: 1.4rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+  &__flex {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__logo-box {
+    text-align: center;
+    margin-bottom: 8rem;
+    display: inline-block;
+  }
+
+  &__logo {
+    width: 8rem;
+    height: auto;
+    position: relative;
+    top: 3.5rem;
+  }
+
+  &__nav {
+    border-top: 5px dotted $light-green;
+    padding-top: 2rem;
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    display: inline-block;
+
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+
+  &__copyright {
+    text-transform: uppercase;
+    display: inline-block;
+    border-top: 5px dotted $light-green;
+    padding-top: 2rem;
+    white-space: nowrap;
+  }
+
+  &__link {
+    transition: all 0.3s;
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: $color-light-grey-1;
+      text-transform: uppercase;
+      display: inline-block;
+      background-color: $color-grey-dark-3;
+      border-radius: 3px;
+    }
+
+    &:hover,
+    &:active {
+      color: $Dark-green;
+      cursor: pointer;
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.4);
+      border-radius: 3px;
+      transform: rotate(5deg) scale(1.3);
+      letter-spacing: 1.1px;
+    }
+
+    &:active {
+      transform: translateY(2px);
+    }
+  }
+}

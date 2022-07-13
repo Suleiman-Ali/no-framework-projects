@@ -1,0 +1,92 @@
+.realtors {
+  background-color: $color-secondary;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  gap: 3rem;
+
+  @media only screen and (max-width: $Largest) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: max-content max-content;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 4rem;
+  }
+
+  @media only screen and (max-width: $mid) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  h3 {
+    justify-self: center;
+    transform: translateX(1400px);
+    animation: real-header 1.75s ease-in-out forwards;
+
+    @media only screen and (max-width: $Largest) {
+      grid-column: 1 / -1;
+    }
+  }
+
+  h4 {
+    text-decoration: underline $color-primary-dark 1.5px;
+  }
+
+  &__item {
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+    justify-content: start;
+    opacity: 0;
+    animation: item 1.75s ease-in-out forwards;
+  }
+
+  &__img {
+    width: 7rem;
+    border-radius: 50%;
+    display: block;
+    border: 3px solid $color-primary-dark;
+    transition: all 0.25s;
+
+    &:hover {
+      transform: scale(1.1);
+      filter: brightness(125%);
+    }
+  }
+
+  &__person {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  &__sold {
+    color: $color-grey-light-2;
+    text-transform: uppercase;
+  }
+}
+
+@keyframes item {
+  0% {
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes real-header {
+  0% {
+  }
+
+  75% {
+    transform: translateX(-50px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}

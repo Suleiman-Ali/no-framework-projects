@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+:root {
+  --one: #bf2e34;
+  --two: #753682;
+  --three: #c7365f;
+  --black: #333;
+  --white: #fff;
+  --font: "Nunito", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-image: linear-gradient(to bottom right, var(--one), var(--two));
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  font-family: var(--font);
+  font-weight: 400;
+}
+
+.content {
+  position: relative;
+  background-color: white;
+  width: 100rem;
+  height: 60rem;
+  margin: 5rem auto;
+  border-radius: 10px;
+  box-shadow: 0 0 3rem 5rem rgba(#000, 0.05);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  overflow: hidden;
+  background-color: transparent;
+
+  .left,
+  .right {
+    padding: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: rgba(255, 255, 255, 0.65);
+    transition: all 0.75s;
+  }
+}
+
+.name {
+  font-size: 4rem;
+  color: var(--black);
+  letter-spacing: 10px;
+  transition: all 0.25s;
+}
+
+.score {
+  font-size: 7.5rem;
+  font-weight: inherit;
+  flex: 1 0;
+  color: var(--three);
+}
+
+.current {
+  background-color: var(--three);
+  padding: 1.75rem 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 10px;
+  color: var(--white);
+  &__text {
+    font-size: 1.75rem;
+  }
+  &__number {
+    font-size: 3.5rem;
+    font-weight: inherit;
+  }
+}
+
+.active {
+  opacity: 0.6;
+
+  .name {
+    font-weight: inherit;
+    letter-spacing: 0;
+  }
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20rem 0;
+  gap: 2.5rem;
+  z-index: 5;
+
+  .btn {
+    font-size: 1.8rem;
+    padding: 1rem 3.5rem;
+    border-radius: 100px;
+    outline: none;
+    border: none;
+    text-align: center;
+    font-family: inherit;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #444;
+    cursor: pointer;
+    box-shadow: 0 0 3rem 3rem rgba(#000, 0.075);
+    backdrop-filter: blur(1px);
+    transform: translateY(-5px);
+    transition: all 0.25s;
+
+    &:active {
+      transform: translateY(0);
+      box-shadow: 0 0 3rem 3rem rgba(#000, 0.125);
+    }
+  }
+
+  .btn--new {
+    margin-bottom: 25rem;
+    transform: translateY(-2.5rem);
+
+    &:active {
+      transform: translateY(-2rem);
+    }
+  }
+}
+
+.dice {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10rem;
+  height: 10rem;
+  border-radius: 5px;
+  box-shadow: 0 0 3rem 3rem rgba(#000, 0.1);
+}
+
+.hidden {
+  display: none;
+}
+::selection {
+  background-color: var(--three);
+  color: var(--white);
+}
+
+.winner {
+  background-color: #2f2f2f !important;
+  opacity: 1;
+  .name {
+    color: var(--three);
+  }
+  .score {
+    font-weight: 800;
+    color: var(--three);
+  }
+}

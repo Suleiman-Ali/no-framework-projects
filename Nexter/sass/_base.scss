@@ -1,0 +1,69 @@
+// COLOR VARIABLES
+$color-primary: #c69963;
+$color-primary-dark: #b28451;
+
+$color-secondary: #101d2c;
+
+$color-grey-light-1: #f9f7f6;
+$color-grey-light-2: #aaa;
+
+$color-grey-dark-1: #54483a;
+$color-grey-dark-2: #6d5d4b;
+
+// FONT VARIABLES
+$font-primary: "Nunito", sans-serif;
+$font-display: "Josefin Sans", sans-serif;
+
+$Largest: 76.625em; // 1225
+$large: 56.25em; // 900px
+$mid: 42.25em; // 675px
+$small: 31.25em; // 500px
+$smallest: 23.125em; // 370px
+
+//
+html {
+  font-size: 62.5%; // 10px
+
+  @media only screen and (max-width: $large) {
+    font-size: 50%;
+  }
+
+  @media only screen and (max-width: $small) {
+    font-size: 45%;
+  }
+
+  @media only screen and (max-width: $smallest) {
+    font-size: 40%;
+  }
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-primary;
+  font-weight: 300;
+  color: $color-grey-dark-2;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.content {
+  width: 95%;
+  margin-left: 7.68rem;
+
+  @media only screen and (max-width: $Largest) {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+::selection {
+  background-color: $color-primary;
+  color: $color-grey-light-1;
+}

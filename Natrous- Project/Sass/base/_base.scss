@@ -1,0 +1,30 @@
+html {
+  font-size: 62.5%;
+
+  @include respond(big-screen) {
+    font-size: 75%;
+  }
+
+  @include respond(tab-land) {
+    font-size: 56.25%;
+  }
+  @include respond(tab) {
+    font-size: 50%;
+  }
+  @include respond(phone) {
+    font-size: 40%;
+  }
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: $Dark-green;
+  color: $color-white;
+}

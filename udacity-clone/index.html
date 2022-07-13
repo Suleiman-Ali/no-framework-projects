@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/udacity.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <script defer src="main.js"></script>
+    <title>Udacity Clone</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <a href="#">
+        <img
+          src="./img/udacity-seeklogo.com.svg"
+          alt="logo"
+          class="nav__logo"
+        />
+      </a>
+      <div class="nav__buttons">
+        <button class="nav__btn">
+          Programs <i class="las la-angle-down"></i>
+
+          <div class="programs hide-list">
+            <ul class="programs__list">
+              <li class="programs__list__item">
+                <a href="#">Artificial Intelligence</a>
+              </li>
+              <li class="programs__list__item">
+                <a href="#">Autonomous Systems</a>
+              </li>
+              <li class="programs__list__item"><a href="#">Business</a></li>
+              <li class="programs__list__item">
+                <a href="#">Cloud Computing</a>
+              </li>
+              <li class="programs__list__item">
+                <a href="#">Cybersecurity</a>
+              </li>
+              <li class="programs__list__item"><a href="#">Data Science</a></li>
+              <li class="programs__list__item">
+                <a href="#">Programming & Development</a>
+              </li>
+              <li class="programs__list__item">
+                <a href="#">Product Management</a>
+              </li>
+              <li class="programs__list__item"><a href="#">Career</a></li>
+            </ul>
+
+            <a href="#" class="btn programs__btn">Full Catalog</a>
+          </div>
+        </button>
+        <button class="nav__btn">
+          Careers <i class="las la-angle-down"></i>
+
+          <div class="careers hide-list">
+            <ul class="dd__list">
+              <li class="dd__item"><a href="#">career prep</a></li>
+              <li class="dd__item"><a href="#">student success</a></li>
+              <li class="dd__item"><a href="#">become a monitor</a></li>
+              <li class="dd__item">
+                <a href="#">become an Instructor</a>
+              </li>
+            </ul>
+          </div>
+        </button>
+        <button class="nav__btn">
+          For Enterprise <i class="las la-angle-down"></i>
+
+          <div class="enterprsie hide-list">
+            <ul class="dd__list">
+              <li class="dd__item">
+                <a href="#">overview</a>
+              </li>
+              <li class="dd__item"><a href="#">product</a></li>
+              <li class="dd__item"><a href="#">schools</a></li>
+              <li class="dd__item">
+                <a href="#">Corporate Social Responsibility </a>
+              </li>
+              <li class="dd__item">
+                <a href="#">Resources </a>
+              </li>
+            </ul>
+          </div>
+        </button>
+        <a href="#" class="nav__btn">For Goverment</a>
+        <a href="#" class="nav__link">Sign In</a>
+        <a href="#" class="btn btn--1">Get started</a>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <div class="hero__right">
+        <h1 class="hero__heading">The latest digital skills, within reach.</h1>
+
+        <p class="hero__text">
+          Discover the fastest, most effective way to gain job-ready <br />
+          expertise for the careers of the future.
+        </p>
+
+        <div class="fors">
+          <div class="for for--1">
+            <a class="for__btn btn">for individuals</a>
+            <p class="for__text">Transform your career.</p>
+          </div>
+
+          <div class="for for--2">
+            <a class="for__btn btn">for Enterprise</a>
+            <p class="for__text">Transform your business.</p>
+          </div>
+
+          <div class="for for--3">
+            <a class="for__btn btn">for Goverment</a>
+            <p class="for__text">Transform your workforce.</p>
+          </div>
+        </div>
+      </div>
+      <img src="./img/hero.webp" alt="" class="hero__img" />
+    </header>
+    <main>
+      <section class="catgs">
+        <h2 class="catgs__heading">
+          Explore our schools to find your perfect program
+        </h2>
+        <ul class="catgs__list">
+          <li class="catgs__list__item"><a href="#">data science</a></li>
+          <li class="catgs__list__item"><a href="#">programming</a></li>
+          <li class="catgs__list__item"><a href="#">business</a></li>
+          <li class="catgs__list__item">
+            <a href="#">artificial inteelligence</a>
+          </li>
+          <li class="catgs__list__item"><a href="#">autonomous systems</a></li>
+          <li class="catgs__list__item"><a href="#">prodact mangement</a></li>
+          <li class="catgs__list__item"><a href="#">cloud computing</a></li>
+          <li class="catgs__list__item"><a href="#">cybersecurity</a></li>
+        </ul>
+        <div class="cards">
+          <a href="#">
+            <div class="card">
+              <img src="./img/data-1.webp" alt="#" class="card__img" />
+              <div class="card__details">
+                <p class="card__title">Data Engineer</p>
+                <div class="card__all-details">
+                  <div class="card__rating">
+                    <div class="card__rating__stars">
+                      <img
+                        src="./img/start-active.svg"
+                        alt="star"
+                        class="card__rating__stars__star"
+                      />
+                      <img
+                        src="./img/start-active.svg"
+                        alt="star"
+                        class="card__rating__stars__star"
+                      />
+                      <img
+                        src="./img/start-active.svg"
+                        alt="star"
+                        class="card__rating__stars__star"
+                      />
+                      <img
+                        src="./img/start-active.svg"
+                        alt="star"
+                        class="card__rating__stars__star"
+                      />
+                      <img
+                        src="./img/start-active.svg"
+                        alt="star"
+                        class="card__rating__stars__star"
+                      />
+                      <p class="card__rating__stars__number">5.0 (1347)</p>
+                    </div>
+                    <div class="card__rating__levels">
+                      <img
+                        src="./img/icons8-signal-24.png"
+                        alt="#"
+                        class="card__rating__levels__img"
+                      />
+                      <p class="card__rating__levels__level">Advance</p>
+                    </div>
+                  </div>
+                  <p class="card__time-title">estimated time</p>
+                  <p class="card__time">5 months at 5-10 hrs/week</p>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="card">
+              <img src="./img/data-2.webp" alt="#" class="card__img" />
+              <div class="card__details">
+                <p class="card__title">Data Scientist</p>
+                <div class="card__all-details">
+                  <div class="card__rating">
+                    <div class="card__rating__stars">
+                      <img
+                        src="./img/start-active.svg"
+                        alt="star"
+                        class="card__rating__stars__star"
+                      />
+                      <img
+                        src="./img/start-active.svg"
+                        alt="star"
+                        class="card__rating__stars__star"
+                      />
+                      <img
+                        src="./img/start-active.svg"
+                        alt="star"
+                        class="card__rating__stars__star"
+                      />
+                      <img
+                        src="./img/start-active.svg"
+                        alt="star"
+                        class="card__rating__stars__star"
+                      />
+                      <img
+                        src="./img/start-active.svg"
+                        alt="star"
+                        class="card__rating__stars__star"
+                      />
+                      <p class="card__rating__stars__number">5.0 (1347)</p>
+                    </div>
+                    <div class="card__rating__levels">
+                      <img
+                        src="./img/icons8-signal-24.png"
+                        alt="#"
+                        class="card__rating__levels__img"
+                      />
+                      <p class="card__rating__levels__level">Advance</p>
+                    </div>
+                  </div>
+                  <p class="card__time-title">estimated time</p>
+                  <p class="card__time">5 months at 5-10 hrs/week</p>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="card">
+              <img src="./img/data-3.webp" alt="#" class="card__img" />
+              <div class="card__details">
+                <p class="card__title">Programming with Python</p>
+                <div class="card__all-details">
+                  <div class="card__rating">
+                    <div class="card__rating__stars">
+                      <img
+                        src="./img/start-active.svg"
+                        alt="star"
+                        class="card__rating__stars__star"
+                      />
+                      <img
+                        src="./img/start-active.svg"
+                        alt="star"
+                        class="card__rating__stars__star"
+                      />
+                      <img
+                        src="./img/start-active.svg"
+                        alt="star"
+                        class="card__rating__stars__star"
+                      />
+                      <img
+                        src="./img/start-active.svg"
+                        alt="star"
+                        class="card__rating__stars__star"
+                      />
+                      <img
+                        src="./img/start-active.svg"
+                        alt="star"
+                        class="card__rating__stars__star"
+                      />
+                      <p class="card__rating__stars__number">5.0 (1347)</p>
+                    </div>
+                    <div class="card__rating__levels">
+                      <img
+                        src="./img/icons8-signal-24.png"
+                        alt="#"
+                        class="card__rating__levels__img"
+                      />
+                      <p class="card__rating__levels__level">Advance</p>
+                    </div>
+                  </div>
+                  <p class="card__time-title">estimated time</p>
+                  <p class="card__time">5 months at 5-10 hrs/week</p>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="#">
+            <div class="card">
+              <img src="./img/data-4.webp" alt="#" class="card__img" />
+              <div class="card__details">
+                <p class="card__title">Data Analyst</p>
+                <div class="card__all-details">
+                  <div class="card__rating">
+                    <div class="card__rating__stars">
+                      <img
+                        src="./img/start-active.svg"
+                        alt="star"
+                        class="card__rating__stars__star"
+                      />
+                      <img
+                        src="./img/start-active.svg"
+                        alt="star"
+                        class="card__rating__stars__star"
+                      />
+                      <img
+                        src="./img/start-active.svg"
+                        alt="star"
+                        class="card__rating__stars__star"
+                      />
+                      <img
+                        src="./img/start-active.svg"
+                        alt="star"
+                        class="card__rating__stars__star"
+                      />
+                      <img
+                        src="./img/start-active.svg"
+                        alt="star"
+                        class="card__rating__stars__star"
+                      />
+                      <p class="card__rating__stars__number">5.0 (1347)</p>
+                    </div>
+                    <div class="card__rating__levels">
+                      <img
+                        src="./img/icons8-signal-24.png"
+                        alt="#"
+                        class="card__rating__levels__img"
+                      />
+                      <p class="card__rating__levels__level">Advance</p>
+                    </div>
+                  </div>
+                  <p class="card__time-title">estimated time</p>
+                  <p class="card__time">5 months at 5-10 hrs/week</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="features">
+        <div class="features__title-box">
+          <h3 class="features__title">
+            Don't waste your valuable time or money
+          </h3>
+          <p class="features__sub-title">
+            Only Udacity has all the critical factors to deliver real results
+          </p>
+        </div>
+        <div class="features__cards">
+          <div class="features__card features__card--1">
+            <img
+              src="./img/features-icon-1.svg"
+              alt="#"
+              class="features__card__img"
+            />
+            <p class="features__card__title">Get real employable skills</p>
+            <p class="features__card__text">
+              Our quality curriculum is designed with top-tier industry
+              partners, not academics, so you learn the high-impact skills that
+              top companies want.
+            </p>
+          </div>
+
+          <div class="features__card features__card--2">
+            <img
+              src="./img/features-icon-2.svg"
+              alt="#"
+              class="features__card__img"
+            />
+
+            <p class="features__card__title no-wrap">
+              Project-based, active learning
+            </p>
+            <p class="features__card__text">
+              Learn by doing with real-world projects and other hands-on
+              exercises that lead to real skills mastery.
+            </p>
+          </div>
+
+          <div class="features__card features__card--3">
+            <img
+              src="./img/features-icon-3.svg"
+              alt="#"
+              class="features__card__img"
+            />
+            <p class="features__card__title">Learn on your schedule</p>
+            <p class="features__card__text">
+              Self-paced learning - whenever and wherever you want. Graduate
+              while learning part-time for 10 hrs/week.
+            </p>
+          </div>
+
+          <div class="features__card features__card--4">
+            <img
+              src="./img/features-icon-4.svg"
+              alt="#"
+              class="features__card__img"
+            />
+            <p class="features__card__title">
+              The help you need, when you need it
+            </p>
+            <p class="features__card__text">
+              Reach out to our mentors 24/7 and have your coding questions
+              answered quickly so you can keep learning.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="compnaies">
+        <div class="compnaies__text-box">
+          <h4 class="compnaies__heading">We are powered by industry</h4>
+          <p class="compnaies__text">
+            Our Nanodegree programs are built in partnership with the world’s
+            <br />
+            most innovative tech companies and taught by industry leaders.
+          </p>
+        </div>
+        <div class="compnaies__imgs">
+          <img src="./img/google-logo.webp" alt="#" class="compnaies__img" />
+          <img src="./img/aws-logo.webp" alt="#" class="compnaies__img" />
+          <img src="./img/mode-logo.webp" alt="#" class="compnaies__img" />
+          <img src="./img/alteryx-logo.webp" alt="#" class="compnaies__img" />
+          <img src="./img/ibm-logo.webp" alt="#" class="compnaies__img" />
+          <img src="./img/microsoft-logo.webp" alt="#" class="compnaies__img" />
+          <img src="./img/Intel-logo.webp" alt="#" class="compnaies__img" />
+          <img src="./img/uipath-logo.webp" alt="#" class="compnaies__img" />
+        </div>
+
+        <div class="explore">
+          <p class="explore__title">
+            Make the most of your online learning experience
+          </p>
+          <p class="explore__text">
+            Our Online Learning Resource Center has tips, tricks and inspiring
+            stories to help you learn while staying home.
+          </p>
+          <a href="#" class="explore__btn btn">Explore Resources</a>
+        </div>
+      </section>
+
+      <section class="comments">
+        <h4 class="comments__heading">Strength in numbers</h4>
+        <div class="infos">
+          <div class="info">
+            <img src="./img/info_img-1.svg" alt="#" class="info__img" />
+            <p class="info__title">100,000+</p>
+            <p class="info__text">
+              Udacity graduations and <br />
+              counting
+            </p>
+          </div>
+
+          <div class="info">
+            <img src="./img/info_img-2.svg" alt="#" class="info__img" />
+            <p class="info__title">200+</p>
+            <p class="info__text">
+              Industry experts partnering <br />
+              to build our content
+            </p>
+          </div>
+
+          <div class="info">
+            <img src="./img/info_img-3.svg" alt="#" class="info__img" />
+            <p class="info__title">100+</p>
+            <p class="info__text">
+              Enterprise customers <br />
+              world-wide
+            </p>
+          </div>
+        </div>
+        <div class="comments__cards">
+          <div class="comments__card comments__card--1">
+            <img
+              src="./img/comments-1.webp"
+              alt="#"
+              class="comments__card__img"
+            />
+            <div class="comments__card__title-box">
+              <p class="comments__card__name">Jesse</p>
+              <p class="comments__card__text">
+                "The curriculum was directly targeted toward applied techniques
+                with high profile projects – real datasets with industry
+                partners. It helped me achieve my career transition goal."
+              </p>
+            </div>
+            <div class="comments__card__footer">
+              <p class="comments__card__now">now at</p>
+              <p class="comments__card__jop">Raytheon | Data Scientist</p>
+            </div>
+          </div>
+
+          <div class="comments__card comments__card--2">
+            <img
+              src="./img/comments-2.webp"
+              alt="#"
+              class="comments__card__img"
+            />
+            <div class="comments__card__title-box">
+              <p class="comments__card__name">Sundar</p>
+              <p class="comments__card__text">
+                "The curriculum was aligned with what I wanted to study. The
+                assignments are specific to the industry I’m in. I was able to
+                develop new language translation tools for my company."
+              </p>
+            </div>
+            <div class="comments__card__footer">
+              <p class="comments__card__now">now at</p>
+              <p class="comments__card__jop">Comcast | Lead Data Scientist</p>
+            </div>
+          </div>
+
+          <div class="comments__card comments__card--3">
+            <img
+              src="./img/comments-3.webp"
+              alt="#"
+              class="comments__card__img"
+            />
+            <div class="comments__card__title-box">
+              <p class="comments__card__name">David</p>
+              <p class="comments__card__text">
+                "One of the things that attracted me to Udacity was a curriculum
+                developed by people that worked for some of the biggest and most
+                successful tech companies.”
+              </p>
+            </div>
+            <div class="comments__card__footer">
+              <p class="comments__card__now">now at</p>
+              <p class="comments__card__jop">
+                Panera Bread | Data Administrator
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="btn-box">
+        <a href="#" class="btn comments__card__btn">more success stories</a>
+      </div>
+    </main>
+    <footer class="footer">
+      <a href="#">
+        <img src="./img/udacity.svg" alt="#" class="footer__img" />
+      </a>
+      <div class="footer__lists">
+        <div class="footer__list-box">
+          <p class="footer__list__heading">Featured Programs</p>
+          <ul class="footer__list">
+            <li class="footer__list__item">
+              <a href="#">Business Analytics</a>
+            </li>
+            <li class="footer__list__item"><a href="#">SQL</a></li>
+            <li class="footer__list__item"><a href="#">Data Engineer</a></li>
+            <li class="footer__list__item"><a href="#">Data Analyst</a></li>
+            <li class="footer__list__item">
+              <a href="#">Intro to Programming</a>
+            </li>
+            <li class="footer__list__item">
+              <a href="#">Digital Marketing</a>
+            </li>
+            <li class="footer__list__item">
+              <a href="#">Self Driving Car Engineer</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__list-box">
+          <p class="footer__list__heading">Only At Udacity</p>
+          <ul class="footer__list">
+            <li class="footer__list__item">
+              <a href="#">Artificial Intelligence</a>
+            </li>
+            <li class="footer__list__item"><a href="#">Deep Learning</a></li>
+            <li class="footer__list__item">
+              <a href="#">Digital Marketing</a>
+            </li>
+            <li class="footer__list__item">
+              <a href="#">Flying Car and Autonomous Flight Enginee</a>
+            </li>
+            <li class="footer__list__item">
+              <a href="#">Intro to Self-Driving Cars</a>
+            </li>
+            <li class="footer__list__item">
+              <a href="#">Machine Learning Engineer</a>
+            </li>
+            <li class="footer__list__item">
+              <a href="#">Robotics Software Engineer</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__list-box">
+          <p class="footer__list__heading">Enterprise</p>
+          <ul class="footer__list">
+            <li class="footer__list__item">
+              <a href="#">Udacity for Enterprise</a>
+            </li>
+            <li class="footer__list__item">
+              <a href="#">Digital Transformation with Udacity</a>
+            </li>
+            <li class="footer__list__item">
+              <a href="#">Artificial Intelligence for Enterprise</a>
+            </li>
+            <li class="footer__list__item">
+              <a href="#">Cybersecurity for Enterprise</a>
+            </li>
+            <li class="footer__list__item">
+              <a href="#">Data Science for Enterprise</a>
+            </li>
+            <li class="footer__list__item">
+              <a href="#">Udacity for Financial Services</a>
+            </li>
+            <li class="footer__list__item">
+              <a href="#">Corporate Social Responsibility</a>
+            </li>
+            <li class="footer__list__item">
+              <a href="#">Enterprise Resource Center</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__list-box">
+          <p class="footer__list__heading">Resources</p>
+          <ul class="footer__list">
+            <li class="footer__list__item"><a href="#">Catalog</a></li>
+            <li class="footer__list__item">
+              <a href="#">Career Resource Center</a>
+            </li>
+            <li class="footer__list__item"><a href="#">Career Services</a></li>
+            <li class="footer__list__item"><a href="#">Student Success</a></li>
+            <li class="footer__list__item"><a href="#">Udacity Talks</a></li>
+            <li class="footer__list__item"><a href="#">Scholarships</a></li>
+            <li class="footer__list__item"><a href="#">What is AI?</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__list-box">
+          <p class="footer__list__heading">Support</p>
+          <ul class="footer__list">
+            <li class="footer__list__item"><a href="#">Contact Us</a></li>
+            <li class="footer__list__item"><a href="#">Help and FAQ</a></li>
+            <li class="footer__list__item"><a href="#">Service Status</a></li>
+            <li class="footer__list__item">
+              <a href="#">Tech Requirements</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__list-box udacity-box">
+          <p class="footer__list__heading">Udacity Schools</p>
+          <ul class="footer__list">
+            <li class="footer__list__item">
+              <a href="#">School of Artificial Intelligence</a>
+            </li>
+            <li class="footer__list__item">
+              <a href="#">School of Autonomous Systems</a>
+            </li>
+            <li class="footer__list__item">
+              <a href="#">School of Business</a>
+            </li>
+            <li class="footer__list__item">
+              <a href="#">School of Cloud Computing</a>
+            </li>
+            <li class="footer__list__item">
+              <a href="#">School of Cybersecurity</a>
+            </li>
+            <li class="footer__list__item">
+              <a href="#">School of Data Science</a>
+            </li>
+            <li class="footer__list__item">
+              <a href="#">School of Programming</a>
+            </li>
+            <li class="footer__list__item">
+              <a href="#">School of Product Management</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__list-box goverment-box">
+          <p class="footer__list__heading">Government</p>
+          <ul class="footer__list">
+            <li class="footer__list__item">
+              <a href="#">Udacity for Government</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__list-box company-box">
+          <p class="footer__list__heading">Company</p>
+          <ul class="footer__list">
+            <li class="footer__list__item"><a href="#">About</a></li>
+            <li class="footer__list__item"><a href="#">Blog</a></li>
+            <li class="footer__list__item"><a href="#">In the News</a></li>
+            <li class="footer__list__item"><a href="#">Jobs at Udacity</a></li>
+            <li class="footer__list__item"><a href="#">Affiliates</a></li>
+            <li class="footer__list__item">
+              <a href="#">Become an Instructor</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="copy-box">
+        <div class="copy-box__header-box">
+          <ul class="copy-box__list">
+            <li class="copy-box__list__item">© 2011–2021 Udacity, Inc.</li>
+            <li class="copy-box__list__link">
+              <a href="#">Legal & Privacy</a>
+            </li>
+            <li class="copy-box__list__link"><a href="#">Site Map</a></li>
+          </ul>
+          <div class="copy-box__socail-box">
+            <a href="#">
+              <img src="./img/facebook.svg" alt="#" class="copy-box__img" />
+            </a>
+            <a href="#">
+              <img src="./img/tweet.svg" alt="#" class="copy-box__img" />
+            </a>
+            <a href="#">
+              <img src="./img/linked-in.svg" alt="#" class="copy-box__img" />
+            </a>
+            <a href="#">
+              <img src="./img/insta.svg" alt="#" class="copy-box__img" />
+            </a>
+          </div>
+        </div>
+
+        <div class="copy-box__footer-box">
+          <p class="copy-box__footer-box__item">
+            "Nanodegree" is a registered trademark of Udacity. © 2011–2021
+            Udacity, Inc.
+          </p>
+          <p class="copy-box__footer-box__item">
+            Udacity is not an accredited university and we don't confer
+            traditional degrees. Udacity Nanodegree programs represent
+            collaborations with our industry partners who help us develop <br />
+            our content and who hire many of our program graduates.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

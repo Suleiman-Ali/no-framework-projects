@@ -1,0 +1,106 @@
+.story {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 61rem;
+
+  @media only screen and (max-width: $large) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 0 0 50rem 0;
+  }
+  @media only screen and (max-width: $small) {
+    margin: 0 0 40rem 0;
+  }
+
+  &__pics {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    background-image: linear-gradient(
+        rgba($color-primary, 0.5),
+        rgba($color-primary, 0.5)
+      ),
+      url(../img/back.jpg);
+    align-items: center;
+
+    @media only screen and (max-width: $large) {
+      order: 1;
+    }
+  }
+
+  &__img--1 {
+    width: 100%;
+    grid-row: 2 / 6;
+    grid-column: 2 / 6;
+    box-shadow: 0 2rem 5rem rgba(#000, 0.2);
+    border-radius: 0.5rem;
+    animation-name: zindex;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+
+    @media only screen and (max-width: $large) {
+      animation: none;
+      grid-column: 2 / 5;
+    }
+  }
+
+  &__img--2 {
+    width: 115%;
+    grid-row: 4 / 6;
+    grid-column: 4 / 7;
+    box-shadow: 0 2rem 5rem rgba(#000, 0.2);
+    border-radius: 0.5rem;
+    animation-name: zindex;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+
+    @media only screen and (max-width: $large) {
+      animation: none;
+      grid-column: 4 / 6;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 6rem 12rem;
+    gap: 4rem;
+    background-color: $color-grey-light-1;
+
+    @media only screen and (max-width: $small) {
+      padding: 6rem 6rem;
+    }
+  }
+
+  &__p {
+    font-size: 1.6rem;
+    font-style: italic;
+  }
+
+  h3 {
+    text-decoration: underline $color-primary-dark 1.5px;
+  }
+
+  a {
+    width: auto;
+  }
+}
+
+@keyframes zindex {
+  0% {
+  }
+
+  50% {
+    z-index: 6;
+    transform: scale(1.1);
+    box-shadow: 0 2rem 5rem rgba(#000, 0.3);
+  }
+
+  100% {
+    z-index: 5;
+    transform: scale(1);
+  }
+}

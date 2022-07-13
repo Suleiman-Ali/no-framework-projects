@@ -1,0 +1,212 @@
+.header {
+  height: 58rem;
+  padding: 6rem;
+  overflow: hidden;
+  background-color: $color-primary;
+  background-image: linear-gradient(
+      rgba($color-secondary, 0.9),
+      rgba($color-secondary, 0.9)
+    ),
+    url("../img/hero.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: grid;
+  grid-template-rows: 2fr 1fr 2fr;
+  grid-template-columns: 1fr;
+
+  @media only screen and (max-width: $Largest) {
+    margin-top: 7rem;
+  }
+
+  @media only screen and (max-width: $mid) {
+    grid-template-columns: 100%;
+  }
+
+  @media only screen and (max-width: $small) {
+    gap: 20rem;
+  }
+
+  &__logo {
+    height: 3rem;
+    justify-self: center;
+    transform: translateY(-1400px);
+    animation: logo 1.75s ease-in-out forwards;
+  }
+
+  &__seenon-text {
+    font-size: 1.6rem;
+    color: $color-grey-light-2;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    transform: translateX(-1400px);
+    animation: text 1.75s ease-in-out forwards;
+    width: 100%;
+    white-space: nowrap;
+
+    @media only screen and (max-width: $mid) {
+      width: 100%;
+    }
+    hr {
+      width: 32.5rem;
+      border: 1.8px none $color-primary-dark;
+      border-style: none none solid;
+      border-radius: 100px;
+
+      @media only screen and (max-width: $Largest) {
+        width: 100%;
+      }
+    }
+  }
+
+  &__seenon-logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10rem;
+    transform: translateY(1400px);
+    animation: logos 1.75s ease forwards;
+
+    @media only screen and (max-width: $mid) {
+      width: 100%;
+      gap: 2rem;
+    }
+
+    @media only screen and (max-width: $small) {
+      gap: 1rem;
+    }
+
+    @media only screen and (max-width: $smallest) {
+      gap: 0.5rem;
+    }
+
+    img {
+      height: 2.5rem;
+      filter: brightness(70%);
+
+      @media only screen and (max-width: $small) {
+        height: 1.8rem;
+      }
+
+      @media only screen and (max-width: $smallest) {
+        height: 1.5rem;
+      }
+    }
+  }
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  opacity: 0;
+  height: 0;
+  animation: title 1.75s ease-in-out forwards;
+}
+
+.seenon {
+  justify-self: start;
+  align-self: end;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+
+  @media only screen and (max-width: $Largest) {
+    justify-self: stretch;
+  }
+
+  @media only screen and (max-width: $mid) {
+    width: 100%;
+  }
+}
+
+.head {
+  display: grid;
+  grid-template-columns: minmax(min-content, 2fr) minmax(min-content, 1fr);
+
+  @media only screen and (max-width: $Largest) {
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content max-content;
+  }
+}
+
+.btn {
+  text-decoration: none;
+  color: $color-grey-light-1;
+  background-color: $color-primary;
+  padding: 1.3rem 2.8rem;
+  width: max-content;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: $font-display;
+  border-radius: 100px;
+  transition: all 0.25s;
+  white-space: nowrap;
+
+  &:hover {
+    background-color: $color-primary-dark;
+    letter-spacing: 1.5px;
+    transform: translateY(-3px);
+  }
+
+  &:active {
+    transform: translateY(-1.5px);
+  }
+}
+
+@keyframes logo {
+  0% {
+  }
+
+  80% {
+    transform: translateY(30px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes title {
+  0% {
+  }
+
+  100% {
+    opacity: 1;
+    height: 1;
+  }
+}
+
+@keyframes text {
+  0% {
+  }
+
+  75% {
+    transform: translateX(50px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes logos {
+  0% {
+  }
+
+  // 75% {
+  //   transform: translateY(-30px);
+  // }
+
+  100% {
+    transform: translateY(0);
+  }
+}
